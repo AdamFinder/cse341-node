@@ -1,14 +1,27 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
+
+const mongodb = require('./db/connect')
+const bodyParser = require('body-parser')
 
 
-app.use('/', require('./routes'))
 
-// app.get('/', (req, res) => {
-//     res.send('Justin Murn')
-// });
+app
+    .use(bodyParser.json())
+    .use((req, res, next) => {
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        next();
+    })
+    .use('/', require('./routes'));
 
-app.listen(port, () => {
-    console.log('Running on port ${port}')
+
+
+mongodb.initDb((err, mongodb) => {
+    if (err) {
+        console.log(err);
+    } else {
+        app.listen(port);
+        console.log(`connected to DB and listening on ${port}`);
+    }
 });
