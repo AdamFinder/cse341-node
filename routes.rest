@@ -1,12 +1,29 @@
-//Localhost
+//Localhost All
 ###
 GET http://localhost:8080/contacts 
 ###
 
+//Localhost singular
 GET http://localhost:8080/contacts/62649c3be49008ab026b3079
 ###
 GET http://localhost:8080/contacts/62649c3be49008ab026b307a
 ###
 GET http://localhost:8080/contacts/62649c3be49008ab026b307b
+
+
+
+//Heroku APP All
+###
+GET https://cse341adam.herokuapp.com/contacts
+###
+
+//Heroku APP singular
+https://cse341adam.herokuapp.com/62649c3be49008ab026b3079
+###
+
+https://cse341adam.herokuapp.com/62649c3be49008ab026b307a
+###
+
+https://cse341adam.herokuapp.com/62649c3be49008ab026b307b
 ###
 
