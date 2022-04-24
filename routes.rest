@@ -18,12 +18,12 @@ GET https://cse341adam.herokuapp.com/contacts
 ###
 
 //Heroku APP singular
-https://cse341adam.herokuapp.com/62649c3be49008ab026b3079
+https://cse341adam.herokuapp.com/contacts/62649c3be49008ab026b3079
 ###
 
-https://cse341adam.herokuapp.com/62649c3be49008ab026b307a
+https://cse341adam.herokuapp.com/contacts/62649c3be49008ab026b307a
 ###
 
-https://cse341adam.herokuapp.com/62649c3be49008ab026b307b
+https://cse341adam.herokuapp.com/contacts/62649c3be49008ab026b307b
 ###
 
