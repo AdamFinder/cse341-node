@@ -5,8 +5,8 @@ const doc = {
     title: 'AFinder Contacts API',
     description: 'Contacts API',
   },
-  host: 'localhost:8080',
-  schemes: ['http'],
+  host: 'https://cse341adam.herokuapp.com',
+  schemes: ['https'],
 };
 
 const outputFile = './swagger.json';
