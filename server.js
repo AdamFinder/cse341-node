@@ -14,12 +14,18 @@ app
     .use(bodyParser.json())
     .use((req, res, next) => {
         res.setHeader('Access-Control-Allow-Origin', '*');
-        res.setHeader(
-            'Access-Control-Allow_Header',
-            'Origin, X-Requested-With, Content-Type, Accept, Z-Key'
-        );
-        res.setHeader('Content-Type', 'application/json');
-        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+
+        //This following chunk of code for testing on the front end react appears to break my Swagger ui
+        // & does not work for the REACT front end site.
+
+        // res.setHeader(
+        //     'Access-Control-Allow_Header',
+        //     'Origin, X-Requested-With, Content-Type, Accept, Z-Key'
+        // );
+        // res.setHeader('Content-Type', 'application/json');
+        // res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+
+        
         next();
     })
     .use('/', require('./routes'));
