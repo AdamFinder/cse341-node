@@ -5,7 +5,7 @@ const doc = {
     title: 'AFinder Contacts API',
     description: 'Contacts API',
   },
-  host: 'https://cse341adam.herokuapp.com',
+  host: 'cse341adam.herokuapp.com',
   schemes: ['https'],
 };
 
